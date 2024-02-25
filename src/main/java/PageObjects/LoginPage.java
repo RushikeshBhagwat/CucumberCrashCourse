@@ -15,13 +15,13 @@ public class LoginPage {
 		this.driver=driver;
 	}
 	
-	By username= By.xpath("//input[@id='input-email']");
-	By pass=By.xpath("//input[@id='input-password']");
-	By Loginbtn= By.xpath("//input[@value='Login']");
+	private By username= By.xpath("//input[@id='input-email']");
+	private By pass=By.xpath("//input[@id='input-password']");
+	private By Loginbtn= By.xpath("//input[@value='Login']");
 	
-    By forgotpasswordlink=By.xpath("(//a[contains(.,'Forgotten Password')])[1]");
-    By warningmsg=By.xpath("//div[@class='alert alert-danger alert-dismissible']");
-    By logoutlink=By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']");
+    private By forgotpasswordlink=By.xpath("(//a[contains(.,'Forgotten Password')])[1]");
+    private By warningmsg=By.xpath("//div[@class='alert alert-danger alert-dismissible']");
+    private By logoutlink=By.xpath("//a[@class='list-group-item'][normalize-space()='Logout']");
     
     public void enterEmail(String email) {
     	
