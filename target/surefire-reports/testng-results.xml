@@ -1,91 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-25T17:45:25 IST" name="Open cart parallel suite" finished-at="2024-02-25T17:45:44 IST" duration-ms="19416">
+  <suite started-at="2024-11-30T14:12:50 IST" name="Open cart parallel suite" finished-at="2024-11-30T14:12:50 IST" duration-ms="417">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5af3afd9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@55b7a4e0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-25T17:45:25 IST" name="Login Page Test" finished-at="2024-02-25T17:45:44 IST" duration-ms="19416">
+    <test started-at="2024-11-30T14:12:50 IST" name="Login Page Test" finished-at="2024-11-30T14:12:50 IST" duration-ms="417">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@5af3afd9]" started-at="2024-02-25T17:45:25 IST" name="setUpClass" finished-at="2024-02-25T17:45:26 IST" duration-ms="901" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@55b7a4e0]" started-at="2024-11-30T14:12:50 IST" name="setUpClass" finished-at="2024-11-30T14:12:50 IST" duration-ms="371" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@bccb269]]>
+                <![CDATA[org.testng.TestRunner@788fa4dd]]>
               </value>
             </param>
           </params>
+          <exception class="io.cucumber.core.gherkin.FeatureParserException">
+            <message>
+              <![CDATA[Failed to parse resource at: file:///C:/Users/rushi/IdeaProjects/CucumberCrashCourse/src/test/java/FeatureFiles/LoginPage.feature
+(3:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'As a user of the opencart website'
+(4:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'I want to be able to login with my account'
+(5:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'So that I can access my account related features and manage my orders']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/rushi/IdeaProjects/CucumberCrashCourse/src/test/java/FeatureFiles/LoginPage.feature
+(3:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'As a user of the opencart website'
+(4:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'I want to be able to login with my account'
+(5:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'So that I can access my account related features and manage my orders'
+at io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:56)
+at io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:46)
+at java.base/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+at io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+at io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:122)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.core.gherkin.FeatureParserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5af3afd9]" started-at="2024-02-25T17:45:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T17:45:42 IST" duration-ms="16413" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Unsuccessful login with invalid or empty credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for opencart E-commerce application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5af3afd9]" started-at="2024-02-25T17:45:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T17:45:42 IST" duration-ms="16728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Successful login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for opencart E-commerce application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5af3afd9]" started-at="2024-02-25T17:45:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T17:45:41 IST" duration-ms="15979" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Navigating to forgotten password page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for opencart E-commerce application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@5af3afd9]" started-at="2024-02-25T17:45:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-25T17:45:42 IST" duration-ms="16390" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Unsuccessful login with invalid or empty credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login functionality for opencart E-commerce application"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@5af3afd9]" started-at="2024-02-25T17:45:42 IST" name="tearDownClass" finished-at="2024-02-25T17:45:44 IST" duration-ms="1736" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@55b7a4e0]" started-at="2024-11-30T14:12:50 IST" name="tearDownClass" finished-at="2024-11-30T14:12:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

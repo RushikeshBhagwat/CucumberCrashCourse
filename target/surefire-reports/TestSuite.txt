@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.107 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.984 s <<< FAILURE! - in TestSuite
+runner.TestRunner.setUpClass[org.testng.TestRunner@788fa4dd](0)  Time elapsed: 0.825 s  <<< FAILURE!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///C:/Users/rushi/IdeaProjects/CucumberCrashCourse/src/test/java/FeatureFiles/LoginPage.feature
+(3:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'As a user of the opencart website'
+(4:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'I want to be able to login with my account'
+(5:1): expected: #EOF, #Comment, #BackgroundLine, #TagLine, #ScenarioLine, #RuleLine, #Empty, got 'So that I can access my account related features and manage my orders'
+
