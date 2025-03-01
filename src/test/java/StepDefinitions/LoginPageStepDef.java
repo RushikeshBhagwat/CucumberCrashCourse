@@ -38,8 +38,8 @@ public class LoginPageStepDef {
 	@Given("I have entered valid username and password")
 	public void i_have_entered_valid_username_and_password() {
 	    // Write code here that turns the phrase above into concrete actions
-	    lp.enterEmail("qatestertest@gmail.com");
-	    lp.enterPassword("Test@123");
+	    lp.enterEmail("uio@gmail.com");
+	    lp.enterPassword("uio@gmail");
 	}
 
 	@When("I click on the login button")
