@@ -12,7 +12,8 @@ import org.testng.Assert;
 import PageObjects.LoginPage;
 
 public class LoginPageStepDef {
-	
+
+	//Declaring globally
 	public WebDriver driver;
 	LoginPage lp;
     
