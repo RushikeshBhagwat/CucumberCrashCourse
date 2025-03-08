@@ -35,4 +35,11 @@ jobs:
           name: test-reports
           path: target/*.xml
 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # This uses the automatically provided token
+          publish_dir: ./target/cucumber-reports  # Directory where your HTML reports are located
+          publish_branch: gh-pages
+
 
