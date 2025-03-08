@@ -29,4 +29,10 @@ jobs:
       - name: Run Cucumber with TestNG
         run: mvn test  # Adjust this if you're using a different build tool (e.g., Gradle)
 
+      - name: Upload test reports as artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-reports
+          path: target/*.xml
+
 
