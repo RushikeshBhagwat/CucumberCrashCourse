@@ -3,7 +3,7 @@ name: Build and Test
 on:
   push:
     branches:
-      - main  # or use your desired branch name
+      - master  # or use your desired branch name
 
 jobs:
   test:
