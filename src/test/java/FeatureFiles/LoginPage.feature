@@ -18,9 +18,9 @@ Scenario Outline: Unsuccessful login with invalid or empty credentials
  Then I should see error message indicating "<error_msg>"
  
  Examples:
- | username         | password                | error_msg                                             |
- | 12^gmail         | invalidpassword         | Warning: No match for E-Mail Address and/or Password. |
- | ui@gmail.com     | validass                | Warning: No match for E-Mail Address and/or Password. |
+ | username              | password                | error_msg                                             |
+ | 12^gmail78.com        | invalidpassword         | Warning: No match for E-Mail Address and/or Password. |
+ | ui23@gmail.com        | validass                | Warning: No match for E-Mail Address and/or Password. |
  
  Scenario: Navigating to forgotten password page 
   When I click on forgot password link

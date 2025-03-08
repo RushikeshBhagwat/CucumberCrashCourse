@@ -1,5 +1,3 @@
 # Default ignored files
-target/
-!target/cucumber-results.xml
 /shelf/
 /workspace.xml
